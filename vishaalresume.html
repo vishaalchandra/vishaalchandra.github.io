@@ -18,10 +18,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family:'Leckerli One', cursive;} {font-size: 30px;
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 </head>
 <body class="w3-lightblue">
-
+<script language="javascript">
+  document.onmousedown = disableclick;
+  status = "Right Click Disabled";
+  Function disableclick(e)
+  {
+    if(event.button == 2)
+    {
+      alert(status);
+      return false; 
+    }
+  }
+</script>
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
