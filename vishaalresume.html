@@ -21,7 +21,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family:'Arima Madurai', cursive;} {font-size: 30px
 <link href="https://fonts.googleapis.com/css?family=Arima Madurai" rel="stylesheet">
 </head>
 <body class="w3-lightblue" oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
-  background-color: white;
+background-color: white;
   color: black;
 .dark-mode {
   background-color: black;
@@ -30,7 +30,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family:'Arima Madurai', cursive;} {font-size: 30px
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="https://github.com/vishaalchandra/vishaalchandra.github.io/blob/master/images/myimagecompressed.JPG?raw=true" style="width:100%">
+    <button onclick="Myfunction()"</button>
+    <script>
+    function Myfunction()
+    {
+      var element =document.body;
+      element.classList.toggle("dark-mode");
+    }
+    </script>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
